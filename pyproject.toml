@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "lambda-ci-cd"
+version = "0.1.0"
+description = "Lambda CI/CD"
+authors = ["fpmacedo <lipe_macedo@msn.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+datetime = "*"
+boto3 = "*"
+
+[tool.poetry.group.test.dependencies]
+pytest = "*"
+pytest-mock = "*"
+moto = "*"
+datetime = "*"
+boto3 = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+pytest-mock = "*"
+datetime = "*"
+boto3 = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
